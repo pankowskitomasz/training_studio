@@ -13,10 +13,29 @@
     @extend %bg-blend;
     @include calc-param(min-height, $section__min-height, $header__height);
 }
-
+.about{
+    &-desc{
+        @include set-background($bg__about-desc-img,0,"center","cover","scroll");        
+    }
+}
+.bg{
+    &-green{
+        background-color: $color__green;
+    }
+}
 .comingsoon{
     &-s1{
         @extend %bg-tmp;
+    }
+}
+.contact{
+    &-data{
+        @include background-blend($bg__blend--multiply, $color__bg-1);
+        @include set-background($bg__contact-data,0,"center","cover","scroll");
+    }
+    &-form{
+        @include background-blend($bg__blend--multiply, $color__white);
+        @include set-background($bg__contact-data,0,"center","cover","scroll");
     }
 }
 .decoration{
@@ -29,6 +48,11 @@
         @extend %bg-tmp;
     }
 }
+.fit{
+    &-cover{
+        object-fit: cover;
+    }
+}
 .font{
     &-logo{
         @include set-font-params($font-logo__family,$font-logo__size);
@@ -37,12 +61,46 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.h{
+    &-25vh{
+        height:25vh;
+    }
+    &-35vh{
+        height:35vh;
+    }
+    &-50vh{
+        height:50vh;
+    }
+    &-100vh{
+        height:100vh;
+    }
+}
 .minh{
+    &-25vh{
+        min-height: 25vh;
+    }
     &-50vh{
         min-height: 50vh;
     }
+    &-75vh{
+        min-height: 75vh;
+    }
     &-100vh{
         min-height: 100vh;
+    }
+}
+.mix{
+    &-blend{
+        mix-blend-mode: $bg__blend--multiply;        
+    }
+}
+.nav{
+    &-link{
+        &:hover{
+            &.text-green{
+                color: darken($color__green,30%) !important;
+            }
+        }
     }
 }
 .p{
@@ -59,8 +117,25 @@
         @extend %bg-tmp;
     }
 }
+.spacer{
+    &-top{
+        @include set-background($bg__spacer-top-img,0,"center","cover","scroll"); 
+    }
+}
 .text{
+    &-green{
+        color: $color__green !important;
+    }
     &-shadow{
         text-shadow: $text__shadow;
     }
+}
+.z{
+    &-100{
+        z-index: 100;
+    }
+}
+
+textarea{
+    resize: none;
 }
