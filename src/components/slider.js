@@ -38,10 +38,8 @@ class Slider extends Component{
     render(){
         let btnLink;
         let carouselContent = this.state.carouselData.map((item,idx)=>{
-            btnLink = (item.link==="")?"": <Link to={item.link}>
-                <Button variant="warning" className="rounded-pill">
-                    {item.linkName}
-                </Button>
+            btnLink = (item.link==="")?"": <Link to={item.link} className="btn btn-warning rounded-pill">
+                {item.linkName}
             </Link>;
             return <Carousel.Item key={idx}>
                     <img alt="slide" 
@@ -69,12 +67,12 @@ class Slider extends Component{
                                 src="img/slider/slide-1.jpg"/>
                             <Carousel.Caption className="mb-5">
                                 <h1 className="display-3 font-weight-bold font-logo text-orange">
-                                    llll
+                                    
                                 </h1>
                                 <p className="initialism">
-                                    pppp
+                                    
                                 </p>
-                                jjj
+                                
                             </Carousel.Caption>
                         </Carousel.Item>;
                     </Col>
