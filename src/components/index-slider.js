@@ -25,10 +25,8 @@ class IndexSlider extends Component{
                                         If you’re looking to boost your computer skills, there are many free or low-cost 
                                         classes you can take that will help you 
                                     </p>
-                                    <Link to="/offer">
-                                        <Button variant="light" className="rounded-pill">
-                                            See more
-                                        </Button>
+                                    <Link to="/offer" className="btn btn-light rounded-pill">
+                                        See more
                                     </Link>
                                 </Carousel.Caption>
                             </Carousel.Item>
@@ -44,10 +42,8 @@ class IndexSlider extends Component{
                                         We are authorized partner of many leading IT companies, what allows us
                                         to prived the highest quality courses for newest technologies.
                                     </p>
-                                    <Link to="/partners">
-                                        <Button variant="light" className="rounded-pill">
-                                            See more
-                                        </Button>
+                                    <Link to="/partners" className="btn btn-light rounded-pill">
+                                        See more
                                     </Link>
                                 </Carousel.Caption>
                             </Carousel.Item>
@@ -63,10 +59,8 @@ class IndexSlider extends Component{
                                         Our employees are for your disposal and answer all your questions.
                                         Contact us online, by phone or personally. 
                                     </p>
-                                    <Link to="/contact">
-                                        <Button variant="light" className="rounded-pill">
-                                            See more
-                                        </Button>
+                                    <Link to="/contact" className="btn btn-light rounded-pill">
+                                        See more
                                     </Link>
                                 </Carousel.Caption>
                             </Carousel.Item>

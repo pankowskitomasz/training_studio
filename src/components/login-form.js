@@ -132,7 +132,7 @@ class LoginForm extends Component{
                             </div>
                             <Form.Group controlId="formLogin">
                                 <Form.Label>Login</Form.Label>
-                                 <Form.Control type="text" 
+                                <Form.Control type="text" 
                                     placeholder="Enter login" 
                                     className="rounded-pill"
                                     maxLength="50"
